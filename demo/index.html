@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>slideon</title>
+  <link rel="stylesheet" href="demo-style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <link rel="stylesheet" href="../slideon.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SlideOn</h1>
+  </header>
+  <div class="bodystyle">
+
+    <!-- Description -->
+    <div class="section">
+      <h3 class="head"><b>Description</b></h3>
+      <hr />
+      <p class="para">
+        Slideon is a simple component which create beutiful slide buttons with <strong>zero latency</strong> and easy
+        integration.
+      </p>
+      <p class="para">
+        <label class="slideon slideon-primary slideon-xs">
+          <input type="checkbox" checked>
+          <span class="slideon-slider"></span>
+        </label>
+        <label class="slideon slideon-secondary slideon-sm">
+          <input type="checkbox" checked>
+          <span class="slideon-slider"></span>
+        </label>
+        <label class="slideon slideon-success slideon-md">
+          <input type="checkbox" checked>
+          <span class="slideon-slider"></span>
+        </label>
+        <label class="slideon slideon-warning slideon-lg">
+          <input type="checkbox" checked>
+          <span class="slideon-slider"></span>
+        </label>
+        <label class="slideon slideon-danger slideon-xl">
+          <input type="checkbox" checked>
+          <span class="slideon-slider"></span>
+        </label>
+      </p>
+    </div>
+
+    <!-- Why slideon over other components -->
+    <div class="section">
+      <h3 class="head"><b>Why slideon over other components</b></h3>
+      <hr />
+      <p class="para">
+        No latency - while integrating many other similar component, you will see a minor latency when your project is
+        huge.
+        The checkbox turning to switch can be visible for a fraction of sec.
+      </p>
+      <p class="para">
+        Easy integration - just add some classes to your checkbox.
+      </p>
+      <p class="para">
+        Different styles - just add some classes for different sizes, shapes and colors.
+      </p>
+      <p class="para">
+        Events and actions - you can trigger events and actions just like how you do with a normal checkbox.
+      </p>
+    </div>
+
+    <!-- Integration -->
+    <div class="section">
+      <h3 class="head"><b>Integration</b></h3>
+      <hr />
+      <p class="para">
+        Download slideon and just add the script file and css file to your website
+      </p>
+      <div class="codearea">
+        <div class="area2">
+          &ltlink rel="stylesheet" href="slideon.css"/&gt
+          &ltscript src="slideon.js"&gt&lt/script&gt
+        </div>
+      </div>
+      <p class="para">
+        You can integrate it in 2 methods
+      </p>
+      <h3 class="subheading">Method 1</h3>
+      <p class="para">
+        Just add a classes slideon and slideon-auto to your checkbox.
+        This is simplest way to integrate, but there is a chance of a minute latency which wont be noticeble as there
+        are some js processing.
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <input type="checkbox" class="slideon slideon-auto" checked>
+        </div>
+        <div class="area2">
+          &ltinput type="checkbox" class="slideon slideon-auto" checked&gt
+        </div>
+      </div>
+      <h3 class="subheading">Method 2</h3>
+      <p class="para">
+        Wrap our checkbox with a label with a class slideon and add a span sibling to our checkbok with a class
+        slideon-slider.
+        This is comparitively a bit more to integrate, but the latency will be zero as there wont be any js processing.
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <label class="slideon">
+            <input type="checkbox" checked>
+            <span class="slideon-slider"></span>
+          </label>
+        </div>
+        <div class="area2">
+          &ltlabel class="slideon"&gt
+          &ltinput type="checkbox" checked&gt
+          &ltspan class="slideon-slider"&gt&lt/span&gt
+          &lt/label&gt
+        </div>
+      </div>
+    </div>
+
+    <!-- Styles -->
+    <div class="section">
+      <h3 class="head"><b>Styles</b></h3>
+      <hr />
+      <p class="para">
+        Slideon currently supports different colors, sizes and shapes. You can use the combination of all styles shown
+        below.
+      </p>
+      <h3 class="subheading">Colors</h3>
+      <p class="para">
+        Slideon supports 7 colors as of now. It follows color standards of bootstrap colors.
+      <ul>
+        <li>slideon-primary</li>
+        <li>slideon-secondary</li>
+        <li>slideon-success</li>
+        <li>slideon-warning</li>
+        <li>slideon-info</li>
+        <li>slideon-dark</li>
+      </ul>
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <input type="checkbox" class="slideon slideon-auto slideon-primary" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-secondary" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-success" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-danger" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-warning" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-info" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-dark" checked>
+        </div>
+        <div class="area2">
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-primary" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-secondary" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-success" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-danger" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-warning" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-info" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-dark" checked&gt
+        </div>
+      </div>
+      <h3 class="subheading">Sizes</h3>
+      <p class="para">
+        Slideon supports 5 sizes as of now.
+      <ul>
+        <li>slideon-xs</li>
+        <li>slideon-sm</li>
+        <li>slideon-md</li>
+        <li>slideon-lg</li>
+        <li>slideon-xl</li>
+      </ul>
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <input type="checkbox" class="slideon slideon-auto slideon-xs" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-sm" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-md" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-lg" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-xl" checked>
+        </div>
+        <div class="area2">
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-xs" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-sm" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-md" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-lg" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-xl" checked&gt
+        </div>
+      </div>
+      <h3 class="subheading">Paddings</h3>
+      <p class="para">
+        Slideon supports 3 levels of padding for the button as of now.
+      <ul>
+        <li>slideon-p0</li>
+        <li>slideon-p1</li>
+        <li>slideon-p2</li>
+      </ul>
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <input type="checkbox" class="slideon slideon-auto slideon-p0" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-p1" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-p2" checked>
+        </div>
+        <div class="area2">
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-p0" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-p1" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-p2" checked&gt
+        </div>
+      </div>
+      <h3 class="subheading">Shapes</h3>
+      <p class="para">
+        Slideon supports 2 shapes as of now.
+      <ul>
+        <li>slideon-round</li>
+        <li>slideon-square</li>
+      </ul>
+      </p>
+      <div class="codearea">
+        <div class="area1">
+          <input type="checkbox" class="slideon slideon-auto slideon-round" checked>
+          <input type="checkbox" class="slideon slideon-auto slideon-square" checked>
+        </div>
+        <div class="area2">
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-round" checked&gt
+          &ltinput type="checkbox" class="slideon slideon-auto slideon-square" checked&gt
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions and events -->
+    <div class="section">
+      <h3 class="head"><b>Actions and events</b></h3>
+      <hr />
+      <p class="para">
+        All the events and actions can be done with js just like how you handle with a normal check box.
+      </p>
+    </div>
+
+    <!-- License -->
+    <div class="section">
+      <h3 class="head"><b>License</b></h3>
+      <hr />
+      <div class="license">
+        <p>Copyright 2022-2025 Shaheen Hyder</p><br>
+
+        <p>
+          Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+          documentation files (the "Software"), to deal in the Software without restriction, including without
+          limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+          Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+          conditions:
+        </p><br>
+
+        <p>
+          The above copyright notice and this permission notice shall be included in all copies or substantial portions
+          of the Software.
+        </p><br>
+
+        <p>
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+          TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+          THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+          CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+          DEALINGS IN THE SOFTWARE.
+        </p><br>
+      </div>
+    </div>
+
+    <footer><br><br></footer>
+  </div>
+  <script src="../slideon.js"></script>
+</body>
+
+</html>

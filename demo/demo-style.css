@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0 5px 3px -3px rgb(231, 228, 228);
+}
+
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-shadow: 0px 1px 1px #e37777;
+  padding: 20px 30px;
+  margin-left: 60px;
+}
+
+.bodystyle {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.head {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 23px;
+  padding: 10px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.para {
+  font-size: 18px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7rem;
+}
+
+.license {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+ul {
+  margin-left: 30px;
+  font-size: 15px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.subheading {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.codearea {
+  border: 3px solid rgb(246, 241, 241);
+  margin: 10px;
+  max-width: 80vw;
+}
+
+.area1 {
+  height: fit-content;
+  padding: 10px;
+  background-color: white;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.area2 {
+  height: fit-content;
+  padding: 0;
+  background-color: rgb(246, 241, 241);
+  white-space: pre;
+  overflow-x: auto;
+  line-break: normal;
+  line-height: 1.2rem;
+}
+
+
+@media (max-width: 800px) {
+  .para {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 520px) {
+  header h1 {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,309 @@
+/*
+ * Style sheet for Slideon 1.0.0
+ */
+
+
+.slideon {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Hiding checkbox */
+.slideon>input {
+    display: none;
+}
+
+input.slideon {
+    display: none;
+}
+
+/* End hiding checkbox */
+
+.slideon-slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slideon-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 1px;
+    bottom: 1px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, 0.45);
+}
+
+.slideon input:checked~.slideon-slider {
+    background-color: #007bff;
+}
+
+.slideon input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.slideon.slideon-p1 .slideon-slider:before {
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-p2 .slideon-slider:before {
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* Slideon color */
+.slideon.slideon-primary input:checked~.slideon-slider {
+    background-color: #007bff;
+}
+
+.slideon.slideon-secondary input:checked~.slideon-slider {
+    background-color: #6c757d;
+}
+
+.slideon.slideon-success input:checked~.slideon-slider {
+    background-color: #28a745;
+}
+
+.slideon.slideon-danger input:checked~.slideon-slider {
+    background-color: #dc3545;
+}
+
+.slideon.slideon-warning input:checked~.slideon-slider {
+    background-color: #ffc107;
+}
+
+.slideon.slideon-info input:checked~.slideon-slider {
+    background-color: #17a2b8;
+}
+
+.slideon.slideon-dark input:checked~.slideon-slider {
+    background-color: #343a40;
+}
+
+/* End slideon color */
+
+
+/* Slideon shape */
+.slideon.slideon-round .slideon-slider {
+    border-radius: 34px;
+}
+
+.slideon.slideon-round .slideon-slider:before {
+    border-radius: 50%;
+}
+
+.slideon.slideon-square .slideon-slider {
+    border-radius: 0;
+}
+
+.slideon.slideon-square .slideon-slider:before {
+    border-radius: 0;
+}
+
+/* End slideon shape */
+
+
+/* Slideon size */
+/* Extra extra small slideon */
+.slideon.slideon-xs {
+    width: 26px;
+    height: 16px;
+}
+
+.slideon.slideon-xs input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.slideon.slideon-xs .slideon-slider:before {
+    height: 14px;
+    width: 14px;
+    left: 1px;
+    bottom: 1px;
+}
+
+.slideon.slideon-xs.slideon-p1 .slideon-slider:before {
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-xs.slideon-p2 .slideon-slider:before {
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* End extra small slideon */
+
+
+/* Small slideon */
+.slideon.slideon-sm {
+    width: 34px;
+    height: 20px;
+}
+
+.slideon.slideon-sm input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.slideon.slideon-sm .slideon-slider:before {
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+}
+
+.slideon.slideon-sm.slideon-p1 .slideon-slider:before {
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-sm.slideon-p2 .slideon-slider:before {
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* End Small slideon */
+
+
+/* Medium slideon */
+.slideon.slideon-md {
+    width: 42px;
+    height: 24px;
+}
+
+.slideon.slideon-md input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.slideon.slideon-md .slideon-slider:before {
+    height: 22px;
+    width: 22px;
+    left: 1px;
+    bottom: 1px;
+}
+
+.slideon.slideon-md.slideon-p1 .slideon-slider:before {
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-md.slideon-p2 .slideon-slider:before {
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* End Medium slideon */
+
+
+/* Large slideon */
+.slideon.slideon-lg {
+    width: 54px;
+    height: 30px;
+}
+
+.slideon.slideon-lg input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+}
+
+.slideon.slideon-lg .slideon-slider:before {
+    height: 28px;
+    width: 28px;
+    left: 1px;
+    bottom: 1px;
+}
+
+.slideon.slideon-lg.slideon-p1 .slideon-slider:before {
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-lg.slideon-p2 .slideon-slider:before {
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* End Large slideon */
+
+
+/* Extra large slideon */
+.slideon.slideon-xl {
+    width: 66px;
+    height: 36px;
+}
+
+.slideon.slideon-xl input:checked~.slideon-slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.slideon.slideon-xl .slideon-slider:before {
+    height: 34px;
+    width: 34px;
+    left: 1px;
+    bottom: 1px;
+}
+
+.slideon.slideon-xl.slideon-p1 .slideon-slider:before {
+    height: 32px;
+    width: 32px;
+    left: 2px;
+    bottom: 2px;
+}
+
+.slideon.slideon-xl.slideon-p2 .slideon-slider:before {
+    height: 30px;
+    width: 30px;
+    left: 3px;
+    bottom: 3px;
+}
+
+/* End Extra large slideon */
+/* End slideon size */
