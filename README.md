@@ -1,12 +1,12 @@
 ## Description
-Slideon is a simple component which create beutiful slide buttons with zero latency and easy integration.
+Slideon is a simple component which creates beautiful slide switches with zero latency and easy integration.
 
 ![Preview](https://i.imgur.com/oNYJsb5.png)
 
 [Documentation and demo](https://shaheenhyder.com/slideon)
 
 ## Why slideon over other components
-No latency - while integrating many other similar component, you will see a minor latency when your project is huge. The checkbox turning to switch can be visible for a fraction of sec.
+No latency - while integrating many other similar components, you will see a minor latency(checkbox turning to switch) if your project is huge but not in slideon.
 
 Easy integration - just add some classes to your checkbox.
 
@@ -24,7 +24,7 @@ Add the following cdn to your web page.
 ```
         
 ##### Standalone
-Download slideon and just add the script file and css file to your website
+Download slideon and just add the script file and css file to your website.
 
 ```
     <link rel="stylesheet" href="slideon.css"/>
