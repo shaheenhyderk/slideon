@@ -1,6 +1,4 @@
 # SlideOn
-
-## Description
 Slideon is a simple component which create beutiful slide buttons with zero latency and easy integration.
 
 ![Preview](https://i.imgur.com/oNYJsb5.png)
