@@ -1,4 +1,4 @@
-## Description
+# SlideOn
 Slideon is a simple component which creates beautiful slide switches with zero latency and easy integration.
 
 ![Preview](https://i.imgur.com/oNYJsb5.png)
