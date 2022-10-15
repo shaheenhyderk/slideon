@@ -77,10 +77,11 @@ ul {
   height: fit-content;
   padding: 0;
   background-color: rgb(246, 241, 241);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   white-space: pre;
   overflow-x: auto;
   line-break: normal;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 
