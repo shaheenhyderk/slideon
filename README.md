@@ -1,9 +1,9 @@
 ## Description
 Slideon is a simple component which create beutiful slide buttons with zero latency and easy integration.
 
-![Preview](http://i.imgur.com/0PcuTbO.jpg)
+![Preview](https://i.imgur.com/oNYJsb5.png)
 
-[Documentation and demo](http://abpetkov.github.io/switchery/)
+[Documentation and demo](https://shaheenhyder.com/slideon)
 
 ## Why slideon over other components
 No latency - while integrating many other similar component, you will see a minor latency when your project is huge. The checkbox turning to switch can be visible for a fraction of sec.
