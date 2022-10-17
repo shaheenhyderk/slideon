@@ -34,7 +34,7 @@ Download slideon and just add the script file and css file to your website.
 For integration, live demo and detailed information checkout the documentation [https://shaheenhyder.com/slideon](https://shaheenhyder.com/slideon)
 
 ## License
-Copyright 2022-2025 Shaheen Hyder
+Copyright 2022 Shaheen Hyder
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
