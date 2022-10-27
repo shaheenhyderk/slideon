@@ -306,4 +306,11 @@ input.slideon {
 }
 
 /* End Extra large slideon */
-/* End slideon size */
+/* End Slideon size */
+
+/* Disabled button */
+.slideon input:disabled~.slideon-slider {
+    opacity: 0.5;
+}
+
+/* End Disabled button */
