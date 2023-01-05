@@ -53,6 +53,8 @@
       </p>
     </div>
 
+    <div id="addSpacce"></div>
+
     <!-- Why slideon over other components -->
     <div class="section">
       <h3 class="head"><b>Why slideon over other components</b></h3>
@@ -112,8 +114,9 @@
         </p>
         <h3 class="subheading">Method 1</h3>
         <p class="para">
-          Add 2 classes, <i>slideon</i> and <i>slideon-auto</i> to your checkbox. This is the simplest way to integrate
-          but there is a chance of a minute latency which won't be noticeable as there are some js processing.
+          Add 2 classes, <i>slideon</i> and <i>slideon-auto</i> to your checkbox and call the load function as shown
+          below. This is the simplest way to integrate but there is a chance of a minute latency which won't be
+          noticeable as there are some js processing.
         </p>
         <div class="codearea">
           <div class="area1">
@@ -121,6 +124,11 @@
           </div>
           <div class="area2">
             &ltinput type="checkbox" class="slideon slideon-auto" checked&gt
+
+            &ltscript&gt
+            &nbsp;&nbsp;var slideon = new Slideon()
+            &nbsp;&nbsp;slideon.load()
+            &lt/script&gt
           </div>
         </div>
         <h3 class="subheading">Method 2</h3>
@@ -313,7 +321,11 @@
 
       <footer><br><br></footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/shaheenhyderk/slideon@1.0.1/slideon.js"></script>
+    <script src="../slideon.js"></script>
+    <script>
+      var slideon = new Slideon()
+      slideon.load()
+    </script>
 </body>
 
 </html>
